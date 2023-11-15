@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KayanIntern", "KayanIntern.csproj", "{1FE0D06E-A2C2-4E6D-AEC1-BC66CDC580A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{058482DB-DE44-490A-89F3-A81083627718}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Provider", "Provider", "{30FDA19C-7A3C-4F7C-9A27-2FEA8576CA5C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{29718514-A349-41F9-98FE-8A0FDD8FB35C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{7D3033AC-91AF-49BD-970E-5EC90639FE97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{FD4948B4-8E61-4B9F-A43D-6FC1F85D683A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1FE0D06E-A2C2-4E6D-AEC1-BC66CDC580A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FE0D06E-A2C2-4E6D-AEC1-BC66CDC580A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FE0D06E-A2C2-4E6D-AEC1-BC66CDC580A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FE0D06E-A2C2-4E6D-AEC1-BC66CDC580A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
