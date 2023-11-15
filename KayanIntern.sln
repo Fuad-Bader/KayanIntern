@@ -10,9 +10,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{8365BF22-B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{311107F1-B2DE-4081-A50C-3D66896DD962}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModels", "ViewModels\ViewModels.csproj", "{FEB5D127-C74C-4947-A18A-E1D80961C2E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FEB5D127-C74C-4947-A18A-E1D80961C2E5} = {F3E84E2E-B425-4E58-AE69-8D6C74667D1C}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEB5D127-C74C-4947-A18A-E1D80961C2E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEB5D127-C74C-4947-A18A-E1D80961C2E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEB5D127-C74C-4947-A18A-E1D80961C2E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEB5D127-C74C-4947-A18A-E1D80961C2E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
