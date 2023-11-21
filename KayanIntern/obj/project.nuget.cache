@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "WQ3G0zMxf7MWwAUXCCS6pHWk0T/TESHfKSTTkAD+NoBmu1kfycjsCEaIl4rlmgSk7u3rT96lTjQ+SNSd+oDnWQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\KayanIntern.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Fuad\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512"
+  ],
+  "logs": []
+}
