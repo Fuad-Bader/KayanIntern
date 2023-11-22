@@ -10,3 +10,4 @@ C:\Users\Fuad\Documents\GitHub\KayanIntern\DataLayer\obj\Debug\net8.0\DataLayer.
 C:\Users\Fuad\Documents\GitHub\KayanIntern\DataLayer\obj\Debug\net8.0\refint\DataLayer.dll
 C:\Users\Fuad\Documents\GitHub\KayanIntern\DataLayer\obj\Debug\net8.0\DataLayer.pdb
 C:\Users\Fuad\Documents\GitHub\KayanIntern\DataLayer\obj\Debug\net8.0\ref\DataLayer.dll
+C:\Users\Fuad\Documents\GitHub\KayanIntern\DataLayer\obj\Debug\net8.0\DataLayer.csproj.AssemblyReference.cache

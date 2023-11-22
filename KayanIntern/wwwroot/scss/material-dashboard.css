@@ -1,0 +1,18 @@
+/* Error: expected "{".
+ *   ,
+ * 1 | f@import "mixins/banner";
+ *   |                         ^
+ *   '
+ *   material-dashboard\bootstrap\bootstrap.scss 1:25  @import
+ *   material-dashboard.scss 24:9                      root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a   \2577 \a 1 \2502  f@import "mixins/banner";\a   \2502                          ^\a   \2575 \a   material-dashboard\\bootstrap\\bootstrap.scss 1:25  @import\a   material-dashboard.scss 24:9                      root stylesheet';
+}

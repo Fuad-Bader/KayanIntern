@@ -1,9 +1,18 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped< KayanIntern.Repository.IUser.IUsers, KayanIntern.Provider.User.Users>();
+// builder.Services.AddAuthentication(
+//         CookieAuthenticationDefaults.AuthenticationScheme)
+//     .AddCookie(option => {
+//         option.LoginPath = "/Home/Index";
+//         option.ExpireTimeSpan = TimeSpan.FromMinutes(30);
+//
+//     });
 
 
 
