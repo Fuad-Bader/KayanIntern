@@ -1,0 +1,12 @@
+C:\Users\Fuad\Documents\GitHub\KayanIntern\Repository.IUser\bin\Debug\net8.0\Repository.IUser.deps.json
+C:\Users\Fuad\Documents\GitHub\KayanIntern\Repository.IUser\bin\Debug\net8.0\Repository.IUser.dll
+C:\Users\Fuad\Documents\GitHub\KayanIntern\Repository.IUser\bin\Debug\net8.0\Repository.IUser.pdb
+C:\Users\Fuad\Documents\GitHub\KayanIntern\Repository.IUser\obj\Debug\net8.0\Repository.IUser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fuad\Documents\GitHub\KayanIntern\Repository.IUser\obj\Debug\net8.0\Repository.IUser.AssemblyInfoInputs.cache
+C:\Users\Fuad\Documents\GitHub\KayanIntern\Repository.IUser\obj\Debug\net8.0\Repository.IUser.AssemblyInfo.cs
+C:\Users\Fuad\Documents\GitHub\KayanIntern\Repository.IUser\obj\Debug\net8.0\Repository.IUser.csproj.CoreCompileInputs.cache
+C:\Users\Fuad\Documents\GitHub\KayanIntern\Repository.IUser\obj\Debug\net8.0\Repository.IUser.sourcelink.json
+C:\Users\Fuad\Documents\GitHub\KayanIntern\Repository.IUser\obj\Debug\net8.0\Repository.IUser.dll
+C:\Users\Fuad\Documents\GitHub\KayanIntern\Repository.IUser\obj\Debug\net8.0\refint\Repository.IUser.dll
+C:\Users\Fuad\Documents\GitHub\KayanIntern\Repository.IUser\obj\Debug\net8.0\Repository.IUser.pdb
+C:\Users\Fuad\Documents\GitHub\KayanIntern\Repository.IUser\obj\Debug\net8.0\ref\Repository.IUser.dll
