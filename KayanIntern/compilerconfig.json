@@ -2,5 +2,9 @@
   {
     "outputFile": "wwwroot/css/site.css",
     "inputFile": "wwwroot/scss/material-dashboard.scss"
+  },
+  {
+    "outputFile": "wwwroot/assets/scss/material-dashboard.css",
+    "inputFile": "wwwroot/assets/scss/material-dashboard.scss"
   }
 ]
