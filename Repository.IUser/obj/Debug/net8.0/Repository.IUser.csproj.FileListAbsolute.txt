@@ -10,3 +10,9 @@ C:\Users\Fuad\Documents\GitHub\KayanIntern\Repository.IUser\obj\Debug\net8.0\Rep
 C:\Users\Fuad\Documents\GitHub\KayanIntern\Repository.IUser\obj\Debug\net8.0\refint\Repository.IUser.dll
 C:\Users\Fuad\Documents\GitHub\KayanIntern\Repository.IUser\obj\Debug\net8.0\Repository.IUser.pdb
 C:\Users\Fuad\Documents\GitHub\KayanIntern\Repository.IUser\obj\Debug\net8.0\ref\Repository.IUser.dll
+C:\Users\Fuad\Documents\GitHub\KayanIntern\Repository.IUser\bin\Debug\net8.0\EntityModels.dll
+C:\Users\Fuad\Documents\GitHub\KayanIntern\Repository.IUser\bin\Debug\net8.0\ViewModels.dll
+C:\Users\Fuad\Documents\GitHub\KayanIntern\Repository.IUser\bin\Debug\net8.0\EntityModels.pdb
+C:\Users\Fuad\Documents\GitHub\KayanIntern\Repository.IUser\bin\Debug\net8.0\ViewModels.pdb
+C:\Users\Fuad\Documents\GitHub\KayanIntern\Repository.IUser\obj\Debug\net8.0\Repository.IUser.csproj.AssemblyReference.cache
+C:\Users\Fuad\Documents\GitHub\KayanIntern\Repository.IUser\obj\Debug\net8.0\Repository.IUser.csproj.CopyComplete

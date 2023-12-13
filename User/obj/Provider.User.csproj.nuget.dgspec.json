@@ -41,6 +41,9 @@
               },
               "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\Services\\Services.csproj": {
                 "projectPath": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\Services\\Services.csproj"
+              },
+              "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\ViewModels\\ViewModels.csproj": {
+                "projectPath": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\ViewModels\\ViewModels.csproj"
               }
             }
           }
@@ -54,6 +57,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.Cookies": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -232,7 +241,14 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\EntityModels\\EntityModels.csproj": {
+                "projectPath": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\EntityModels\\EntityModels.csproj"
+              },
+              "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\ViewModels\\ViewModels.csproj": {
+                "projectPath": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\ViewModels\\ViewModels.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

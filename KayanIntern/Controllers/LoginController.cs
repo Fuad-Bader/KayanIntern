@@ -1,4 +1,8 @@
 ﻿using Dapper;
+using KayanIntern.Business.User;
+using KayanIntern.EntityModels;
+using KayanIntern.Provider.User;
+using KayanIntern.ViewModels;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
@@ -25,14 +29,46 @@ public class LoginController : Controller
 
         return View();
     }
+
     [HttpPost]
-    public IActionResult Login(string email, string password)
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Login(string email, string password)
     {
-        if (!_User.Login(email, password))
+        LoginVM loginVM = new LoginVM();
+        loginVM.Email = email;
+        loginVM.Password = password;
+
+        var user = _User.Login(loginVM);
+
+
+        if (user == null)
         {
             return RedirectToAction("Privacy", "Home");
         }
-        return RedirectToAction("Index", "Home");
+        else
+        {
+            List<Claim> claims = new List<Claim>() {
+                    new Claim("Email", user.Email.ToString(), ClaimValueTypes.String),
+                    new Claim("FirstName", user.FirstName.ToString(),ClaimValueTypes.String),
+                    new Claim("LastName", user.LastName.ToString(), ClaimValueTypes.String),
+                    new Claim("Birthday", user.Birthday.ToString(), ClaimValueTypes.String)
+
+                };
+
+
+            ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims,
+                CookieAuthenticationDefaults.AuthenticationScheme);
+
+            AuthenticationProperties properties = new AuthenticationProperties()
+            {
+                AllowRefresh = true
+            };
+
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
+                new ClaimsPrincipal(claimsIdentity), properties);
+            return RedirectToAction("Index", "Dashboard");
+        }
+            
     }
 
     

@@ -1,11 +1,46 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "EntityModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/EntityModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EntityModels.dll": {}
+        }
+      },
+      "ViewModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/ViewModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ViewModels.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "EntityModels/1.0.0": {
+      "type": "project",
+      "path": "../EntityModels/EntityModels.csproj",
+      "msbuildProject": "../EntityModels/EntityModels.csproj"
+    },
+    "ViewModels/1.0.0": {
+      "type": "project",
+      "path": "../ViewModels/ViewModels.csproj",
+      "msbuildProject": "../ViewModels/ViewModels.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "EntityModels >= 1.0.0",
+      "ViewModels >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Fuad\\.nuget\\packages\\": {},
@@ -39,7 +74,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\EntityModels\\EntityModels.csproj": {
+              "projectPath": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\EntityModels\\EntityModels.csproj"
+            },
+            "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\ViewModels\\ViewModels.csproj": {
+              "projectPath": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\ViewModels\\ViewModels.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

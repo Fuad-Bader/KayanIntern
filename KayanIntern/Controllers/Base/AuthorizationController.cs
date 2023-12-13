@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace KayanInt2ern.KayanIntern.Controllers.Base
+namespace KayanIntern.KayanIntern.Controllers.Base
 {
     public class AuthorizationController : Controller
     {

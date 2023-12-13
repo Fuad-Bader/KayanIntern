@@ -5,14 +5,17 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddHttpContextAccessor();
+
 builder.Services.AddScoped< KayanIntern.Repository.IUser.IUsers, KayanIntern.Provider.User.Users>();
-// builder.Services.AddAuthentication(
-//         CookieAuthenticationDefaults.AuthenticationScheme)
-//     .AddCookie(option => {
-//         option.LoginPath = "/Home/Index";
-//         option.ExpireTimeSpan = TimeSpan.FromMinutes(30);
-//
-//     });
+builder.Services.AddAuthentication(
+        CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(option =>
+    {
+        option.LoginPath = "/Login/Index";
+        option.ExpireTimeSpan = TimeSpan.FromMinutes(30);
+
+    });
 
 
 
