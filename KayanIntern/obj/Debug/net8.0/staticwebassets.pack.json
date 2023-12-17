@@ -1217,6 +1217,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\img\\KI logo 75x75.png",
+      "PackagePath": "staticwebassets\\img\\KI logo 75x75.png"
+    },
+    {
+      "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\img\\KI logo.png",
+      "PackagePath": "staticwebassets\\img\\KI logo.png"
+    },
+    {
       "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\img\\corporate-bg.jpg",
       "PackagePath": "staticwebassets\\img\\corporate-bg.jpg"
     },
