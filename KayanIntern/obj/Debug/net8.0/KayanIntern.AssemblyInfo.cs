@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KayanIntern")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e77fb0ab7fabdf85802325e03f5e0b2f1e293ce1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c446226f0adb7cacfcbd12e3d603ca81b2bc905")]
 [assembly: System.Reflection.AssemblyProductAttribute("KayanIntern")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KayanIntern")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace KayanIntern.KayanIntern.Controllers
+namespace KayanIntern.KayanIntern.Controllers.Base
 {
-    public class DashboardController : Controller
+    public class DashboardController : AuthorizationController
     {
         public IActionResult Index()
         {

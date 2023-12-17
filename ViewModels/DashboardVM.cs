@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace KayanIntern.ViewModels
+﻿namespace KayanIntern.ViewModels
 {
     public class DashboardVM
     {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
     }
 }
