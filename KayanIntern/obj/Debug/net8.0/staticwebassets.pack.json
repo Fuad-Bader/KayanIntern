@@ -425,6 +425,18 @@
       "PackagePath": "staticwebassets\\assets\\js\\material-dashboard.min.js"
     },
     {
+      "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\assets\\js\\material-kit.js",
+      "PackagePath": "staticwebassets\\assets\\js\\material-kit.js"
+    },
+    {
+      "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\assets\\js\\material-kit.js.map",
+      "PackagePath": "staticwebassets\\assets\\js\\material-kit.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\assets\\js\\material-kit.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\material-kit.min.js"
+    },
+    {
       "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\assets\\js\\plugins\\Chart.extension.js",
       "PackagePath": "staticwebassets\\assets\\js\\plugins\\Chart.extension.js"
     },
@@ -437,16 +449,52 @@
       "PackagePath": "staticwebassets\\assets\\js\\plugins\\chartjs.min.js"
     },
     {
+      "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\assets\\js\\plugins\\choices.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\choices.min.js"
+    },
+    {
       "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\assets\\js\\plugins\\countup.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\plugins\\countup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\assets\\js\\plugins\\flatpickr.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\flatpickr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\assets\\js\\plugins\\highlight.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\highlight.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\assets\\js\\plugins\\moment.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\moment.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\assets\\js\\plugins\\parallax.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\parallax.min.js"
     },
     {
       "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\assets\\js\\plugins\\perfect-scrollbar.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\plugins\\perfect-scrollbar.min.js"
     },
     {
+      "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\assets\\js\\plugins\\prism.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\prism.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\assets\\js\\plugins\\rellax.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\rellax.min.js"
+    },
+    {
       "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\assets\\js\\plugins\\smooth-scrollbar.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\plugins\\smooth-scrollbar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\assets\\js\\plugins\\tilt.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\tilt.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\assets\\js\\plugins\\typedjs.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\typedjs.js"
     },
     {
       "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\assets\\js\\plugins\\world.js",

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace KayanInt2ern.KayanIntern.Controllers
+namespace KayanIntern.KayanIntern.Controllers
 {
     public class DashboardController : Controller
     {

@@ -1,12 +1,7 @@
-﻿using Dapper;
-using KayanIntern.Business.User;
-using KayanIntern.EntityModels;
-using KayanIntern.Provider.User;
-using KayanIntern.ViewModels;
+﻿using KayanIntern.ViewModels;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
-using System.Linq;
 using System.Security.Claims;
 
 namespace KayanIntern.Controllers;
@@ -15,24 +10,24 @@ public class LoginController : Controller
 {
     private readonly Repository.IUser.IUsers _User;
 
-    public LoginController(Repository.IUser.IUsers user) 
-    { 
+    public LoginController(Repository.IUser.IUsers user)
+    {
         _User = user;
     }
 
-    public IActionResult Login()
+    public IActionResult Index()
     {
         ClaimsPrincipal claimUser = HttpContext.User;
 
         if (claimUser.Identity.IsAuthenticated)
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Dashboard");
 
         return View();
     }
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Login(string email, string password)
+    public async Task<IActionResult> Index(string email, string password)
     {
         LoginVM loginVM = new LoginVM();
         loginVM.Email = email;
@@ -47,6 +42,7 @@ public class LoginController : Controller
         }
         else
         {
+            var rememberMe = loginVM.RememberMe;
             List<Claim> claims = new List<Claim>() {
                     new Claim("Email", user.Email.ToString(), ClaimValueTypes.String),
                     new Claim("FirstName", user.FirstName.ToString(),ClaimValueTypes.String),
@@ -59,19 +55,27 @@ public class LoginController : Controller
             ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims,
                 CookieAuthenticationDefaults.AuthenticationScheme);
 
-            AuthenticationProperties properties = new AuthenticationProperties()
+            AuthenticationProperties properties = new AuthenticationProperties();
+
+            if (rememberMe)
             {
-                AllowRefresh = true
-            };
+                properties.AllowRefresh = true;
+            }
+            else
+            {
+
+                properties.AllowRefresh = false;
+
+            }
 
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
                 new ClaimsPrincipal(claimsIdentity), properties);
             return RedirectToAction("Index", "Dashboard");
         }
-            
+
     }
 
-    
+
 
 
 }

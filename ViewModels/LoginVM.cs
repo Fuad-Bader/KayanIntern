@@ -6,6 +6,6 @@
         public string UserName { get; set; }
         public string Password { get; set; }
         public int IsAuthenticated { get; set; }
-        public bool StayLoggedIn { get; set; }
+        public bool RememberMe { get; set; }
     }
 }

@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace KayanIntern.ViewModels
 {
     public class RegistrationVM
     {
-        public int Id { get; set; }
+        public int ID { get; set; }
         [Required]
         public string FirstName { get; set; }
         [Required]
@@ -18,5 +13,7 @@ namespace KayanIntern.ViewModels
         public string Password { get; set; }
         [Required]
         public string Email { get; set; }
+        [Required]
+        public DateTime Birthday { get; set; }
     }
 }

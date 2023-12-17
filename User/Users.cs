@@ -1,11 +1,6 @@
 ﻿using KayanIntern.Business.User;
-using KayanIntern.EntityModels;
+using KayanIntern.Business.Users;
 using KayanIntern.ViewModels;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Http;
-using System.Security.AccessControl;
-using System.Security.Claims;
 
 namespace KayanIntern.Provider.User
 {
@@ -15,6 +10,22 @@ namespace KayanIntern.Provider.User
         {
             Authentication authentication = new Authentication();
             var user = authentication.Login(loginVM);
+
+            if (user != null)
+            {
+                return user;
+            }
+
+            else
+            {
+                return null;
+            }
+        }
+
+        public KayanIntern.EntityModels.User SignUp(RegistrationVM registrationVM)
+        {
+            Registration registration = new Registration();
+            var user = registration.SignUp(registrationVM);
 
             if (user != null)
             {

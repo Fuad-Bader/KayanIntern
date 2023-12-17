@@ -7,7 +7,7 @@
     <UserSecretsId>2bc10240-5e85-4eb0-a292-7292157c277d</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>.</DockerfileContext>
-    <RootNamespace>KayanInt2ern.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+    <RootNamespace>KayanIntern.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
