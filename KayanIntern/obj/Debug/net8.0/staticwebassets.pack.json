@@ -501,6 +501,14 @@
       "PackagePath": "staticwebassets\\assets\\js\\plugins\\world.js"
     },
     {
+      "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\assets\\scss\\material-dashboard.css",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard.css"
+    },
+    {
+      "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\assets\\scss\\material-dashboard.min.css",
+      "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard.min.css"
+    },
+    {
       "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\assets\\scss\\material-dashboard.scss",
       "PackagePath": "staticwebassets\\assets\\scss\\material-dashboard.scss"
     },
@@ -1211,6 +1219,10 @@
     {
       "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\img\\corporate-bg.jpg",
       "PackagePath": "staticwebassets\\img\\corporate-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\img\\landing-bg.jpg",
+      "PackagePath": "staticwebassets\\img\\landing-bg.jpg"
     },
     {
       "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\js\\core\\bootstrap.bundle.min.js",

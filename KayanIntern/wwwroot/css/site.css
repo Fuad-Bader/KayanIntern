@@ -19443,7 +19443,7 @@ html {
   box-shadow: inset 0px 0px 2px rgba(254, 254, 254, 0.8196078431);
   -webkit-backdrop-filter: saturate(200%) blur(30px);
   backdrop-filter: saturate(200%) blur(30px);
-  background-color: rgba(255, 255, 255, 0.8) !important;
+  background-color: rgba(255, 255, 255, 0.4) !important;
 }
 .blur.saturation-less {
   -webkit-backdrop-filter: saturate(20%) blur(30px);
@@ -23677,4 +23677,8 @@ pre[class*=language-] {
 
 .skip-navbar {
   margin-top: 90px;
+}
+
+.white {
+  color: white;
 }

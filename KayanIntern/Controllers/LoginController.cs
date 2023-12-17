@@ -55,16 +55,19 @@ public class LoginController : Controller
             ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims,
                 CookieAuthenticationDefaults.AuthenticationScheme);
 
-            AuthenticationProperties properties = new AuthenticationProperties();
+            AuthenticationProperties properties = new AuthenticationProperties
+            {
+                AllowRefresh = true,
+                IsPersistent = rememberMe
+            };
 
             if (rememberMe)
             {
-                properties.AllowRefresh = true;
+                properties.ExpiresUtc = DateTime.UtcNow.AddDays(3);
             }
             else
             {
-
-                properties.AllowRefresh = false;
+                properties.IsPersistent = false;
 
             }
 

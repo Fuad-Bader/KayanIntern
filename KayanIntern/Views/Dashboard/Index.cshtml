@@ -2,5 +2,6 @@
 @{
     ViewData["Title"] = "Dashboard";
     Layout = "_DashboardLayout";
+    var FirstName = User.FindFirst("FirstName")?.Value;
 }
-<p>@Model.FirstName</p>
+<h3>Welcome @FirstName!</h3>

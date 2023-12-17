@@ -6,7 +6,7 @@
     ViewData["Title"] = "Registration";
 }
 <section>
-    <div class="page-header min-vh-100 card">
+    <div class="page-header min-vh-100 card blur blur-shadow">
         <div class="container">
             <div class="row">
                 <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 start-0 text-center justify-content-center flex-column">
@@ -14,37 +14,37 @@
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column ms-auto me-auto ms-lg-auto me-lg-5">
-                    <div class="card card-plain">
-                        <div class="card-header">
-                            <h4 class="font-weight-bolder">Sign Up</h4>
-                            <p class="mb-0">Enter your email and password to register</p>
+                    <div class="card card-plain mt-3">
+                        <div class="card-header bg-transparent">
+                            <h4 class="font-weight-bolder text-light">Sign Up</h4>
+                            <p class="mb-0 text-light">Enter your email and password to register</p>
                         </div>
                         <div class="card-body">
                             <form asp-controller="Registration" asp-action="Register">
                                 <div class="input-group input-group-outline mb-3">
-                                    <label class="form-label">First Name</label>
+                                    <label class="form-label text-light">First Name</label>
                                     <input type="text" class="form-control" asp-for="FirstName">
                                 </div>
                                 <div class="input-group input-group-outline mb-3">
-                                    <label class="form-label">Last Name</label>
+                                    <label class="form-label text-light">Last Name</label>
                                     <input type="text" class="form-control" asp-for="LastName">
                                 </div>
                                 <div class="input-group input-group-outline mb-3">
-                                    <label class="form-label">Email</label>
+                                    <label class="form-label text-light">Email</label>
                                     <input type="email" class="form-control" asp-for="Email">
                                 </div>
                                 <div class="input-group input-group-outline mb-3">
-                                    <label class="form-label">Password</label>
+                                    <label class="form-label text-light">Password</label>
                                     <input type="password" class="form-control" asp-for="Password">
                                 </div>
                                 <div class="input-group input-group-outline mb-3">
-                                    <label class="form-label">Confirm Password</label>
+                                    <label class="form-label text-light">Confirm Password</label>
                                     <input type="password" class="form-control">
                                 </div>
 
                                   <!--  Datepicker -->
                                 <div class="input-group input-group-outline mb-3">
-                                    <label class="form-label"> Enter your birthday</label>
+                                    <label class="form-label text-light"> Enter your birthday</label>
                                     <input class="form-control datepicker" type="text" asp-for="Birthday">
                                 </div>
                                 <script>
@@ -60,7 +60,7 @@
                                 </script>
                                 <div class="form-check form-check-info text-start ps-0">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
+                                    <label class="form-check-label text-light" for="flexCheckDefault">
                                         I agree to the <a asp-action="Privacy" asp-controller="Home" class="text-dark font-weight-bolder">Terms and Conditions</a>
                                     </label>
                                 </div>
@@ -70,7 +70,7 @@
                             </form>
                         </div>
                         <div class="card-footer text-center pt-0 px-lg-2 px-1">
-                            <p class="mb-2 text-sm mx-auto">
+                            <p class="mb-2 text-sm mx-auto text-light">
                                 Already have an account?
                                 <a asp-action="Index" asp-controller="Login" class="text-primary text-gradient font-weight-bold">Sign in</a>
                             </p>
@@ -80,7 +80,7 @@
             </div>
         </div>
     </div>
-</section>
+</sectio>
 
 <script>
     document.getElementById("flexCheckDefault").addEventListener("change", function () {
