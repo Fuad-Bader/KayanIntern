@@ -19,7 +19,7 @@ namespace KayanIntern.KayanIntern.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Register(string email, string password, string firstName, string lastName, DateTime birthday)
+        public IActionResult Register(string email, string password, string firstName, string lastName, DateTime birthday)
         {
             RegistrationVM registrationVM = new RegistrationVM();
             registrationVM.Email = email;

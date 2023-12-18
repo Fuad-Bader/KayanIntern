@@ -23,29 +23,30 @@
                             <form asp-controller="Registration" asp-action="Register">
                                 <div class="input-group input-group-outline mb-3">
                                     <label class="form-label text-light">First Name</label>
-                                    <input type="text" class="form-control" asp-for="FirstName">
+                                    <input type="text" class="form-control" asp-for="FirstName" required>
                                 </div>
                                 <div class="input-group input-group-outline mb-3">
                                     <label class="form-label text-light">Last Name</label>
-                                    <input type="text" class="form-control" asp-for="LastName">
+                                    <input type="text" class="form-control" asp-for="LastName" required>
                                 </div>
                                 <div class="input-group input-group-outline mb-3">
                                     <label class="form-label text-light">Email</label>
-                                    <input type="email" class="form-control" asp-for="Email">
+                                    <input type="email" class="form-control" asp-for="Email" required>
                                 </div>
-                                <div class="input-group input-group-outline mb-3">
+                                <div class="input-group input-group-outline mb-3" id="pass-val">
                                     <label class="form-label text-light">Password</label>
-                                    <input type="password" class="form-control" asp-for="Password">
-                                </div>
-                                <div class="input-group input-group-outline mb-3">
-                                    <label class="form-label text-light">Confirm Password</label>
-                                    <input type="password" class="form-control">
+                                    <input id="Password" type="password" class="form-control" required>
                                 </div>
 
-                                  <!--  Datepicker -->
+                                <div class="input-group input-group-outline mb-3" id="confirm-val">
+                                    <label class="form-label text-light">Confirm Password</label>
+                                    <input id="confirmPassword" type="password" class="form-control" required>
+                                </div>
+
+                                <!--  Datepicker -->
                                 <div class="input-group input-group-outline mb-3">
                                     <label class="form-label text-light"> Enter your birthday</label>
-                                    <input class="form-control datepicker" type="text" asp-for="Birthday">
+                                    <input class="form-control datepicker" type="text" asp-for="Birthday" required>
                                 </div>
                                 <script>
                                     if (document.querySelector(".datepicker")) {
@@ -80,11 +81,42 @@
             </div>
         </div>
     </div>
-</sectio>
+</section>
+
 
 <script>
     document.getElementById("flexCheckDefault").addEventListener("change", function () {
         var submitButton = document.getElementById("submitButton");
         submitButton.disabled = !this.checked;
     });
+
+    // // Function to check if passwords match and add is-valid class
+    // function checkPasswordMatch() {
+    //     var password = document.getElementById("Password").value;
+    //     var confirmPassword = document.getElementById("confirmPassword").value;
+    //     var submitButton = document.getElementById("submitButton");
+
+    //     // Check if passwords match
+    //     if (password === confirmPassword && document.getElementById("flexCheckDefault").checked) {
+    //         submitButton.disabled = false;
+
+    //         // Add is-valid class to the input fields
+    //         document.getElementById("pass-val").classList.remove("input-group-outline");
+    //         document.getElementById("confirm-val").classList.remove("input-group-outline");
+    //         document.getElementById("pass-val").classList.add("is-valid");
+    //         document.getElementById("confirm-val").classList.add("is-valid");
+    //     } else {
+    //         submitButton.disabled = true;
+
+    //         // Remove is-valid class if passwords don't match
+    //         document.getElementById("pass-val").classList.remove("is-valid");
+    //         document.getElementById("confirm-val").classList.remove("is-valid");
+    //         document.getElementById("pass-val").classList.add("is-invalid");
+    //         document.getElementById("confirm-val").classList.add("is-invalid");
+    //     }
+    // }
+
+    // // Add an event listener for the input fields
+    // document.getElementById("Password").addEventListener("input", checkPasswordMatch);
+    // document.getElementById("confirmPassword").addEventListener("input", checkPasswordMatch);
 </script>

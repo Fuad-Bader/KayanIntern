@@ -10,5 +10,10 @@ namespace KayanIntern.KayanIntern.Controllers.Base
         {
             return View();
         }
+
+        public IActionResult Profile()
+        {
+            return View();
+        }
     }
 }
