@@ -22,23 +22,19 @@ public class LoginController : Controller
         if (claimUser.Identity.IsAuthenticated)
             return RedirectToAction("Index", "Dashboard");
 
-        return View();
+        return View(new LoginVM { Email = "" });
     }
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Index(string email, string password)
+    public async Task<IActionResult> Index(LoginVM loginVM)
     {
-        LoginVM loginVM = new LoginVM();
-        loginVM.Email = email;
-        loginVM.Password = password;
-
         var user = _User.Login(loginVM);
-
 
         if (user == null)
         {
-            return RedirectToAction("Privacy", "Home");
+            ModelState.AddModelError(String.Empty, "The Email or Password are incorrect");
+            return View(new LoginVM { Email = "" });
         }
         else
         {
@@ -50,7 +46,6 @@ public class LoginController : Controller
                     new Claim("Birthday", user.Birthday.ToString(), ClaimValueTypes.String)
 
                 };
-
 
             ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims,
                 CookieAuthenticationDefaults.AuthenticationScheme);
@@ -80,12 +75,8 @@ public class LoginController : Controller
 
     public async Task<IActionResult> Logout()
     {
-
         await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
 
         return RedirectToAction("Index", "Login");
     }
-
-
-
 }

@@ -1233,6 +1233,10 @@
       "PackagePath": "staticwebassets\\img\\landing-bg.jpg"
     },
     {
+      "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\img\\wallpapersden.com_macos-12-monterey-stock-dark_3840x2160.jpg",
+      "PackagePath": "staticwebassets\\img\\wallpapersden.com_macos-12-monterey-stock-dark_3840x2160.jpg"
+    },
+    {
       "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\js\\core\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\js\\core\\bootstrap.bundle.min.js"
     },
@@ -2219,6 +2223,10 @@
     {
       "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\scss\\material-dashboard\\variables\\_virtual-reality.scss",
       "PackagePath": "staticwebassets\\scss\\material-dashboard\\variables\\_virtual-reality.scss"
+    },
+    {
+      "Id": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\vid\\neon-bg.mp4",
+      "PackagePath": "staticwebassets\\vid\\neon-bg.mp4"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.KayanIntern.Microsoft.AspNetCore.StaticWebAssets.props",

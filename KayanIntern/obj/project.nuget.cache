@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "hBBRkEeggGaISRc68nn6YpxNuX+BJmSF+1Il6+Dml6bQe6CqHSJtuVCYGgxUu38pWf2fYdf81ncHX2kQtZJzdw==",
+  "dgSpecHash": "fp1RV7xYlJId9LevVNdPddXmtUQ27eNVMeWb74H5G70qvPxBC0NyALwhE089ea5emobVLqg9h486y8mv9kDMhg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\KayanIntern.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Fuad\\.nuget\\packages\\dapper\\2.1.21\\dapper.2.1.21.nupkg.sha512",
+    "C:\\Users\\Fuad\\.nuget\\packages\\jquery\\1.6.3\\jquery.1.6.3.nupkg.sha512",
     "C:\\Users\\Fuad\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\Fuad\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Fuad\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.2.0\\microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",
@@ -47,7 +48,8 @@
     "C:\\Users\\Fuad\\.nuget\\packages\\system.security.cryptography.xml\\4.5.0\\system.security.cryptography.xml.4.5.0.nupkg.sha512",
     "C:\\Users\\Fuad\\.nuget\\packages\\system.security.permissions\\4.5.0\\system.security.permissions.4.5.0.nupkg.sha512",
     "C:\\Users\\Fuad\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
-    "C:\\Users\\Fuad\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
+    "C:\\Users\\Fuad\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512",
+    "C:\\Users\\Fuad\\.nuget\\packages\\toastr\\2.1.1\\toastr.2.1.1.nupkg.sha512"
   ],
   "logs": []
 }

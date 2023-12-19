@@ -10,42 +10,54 @@
         <div class="container">
             <div class="row">
                 <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 start-0 text-center justify-content-center flex-column">
-                    <div class="position-relative bg-gradient-primary h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center" style="background-image: url('../assets/img/illustrations/illustration-signup.jpg'); background-size: cover;">
+                    <div class="position-relative bg-gradient-primary h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center" style="background-image: url('../img/wallpapersden.com_macos-12-monterey-stock-dark_3840x2160.jpg'); background-size: cover;">
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column ms-auto me-auto ms-lg-auto me-lg-5">
                     <div class="card card-plain mt-3">
                         <div class="card-header bg-transparent">
-                            <h4 class="font-weight-bolder text-light">Sign Up</h4>
-                            <p class="mb-0 text-light">Enter your email and password to register</p>
+                            <h4 class="font-weight-bolder text-primary text-gradient">Sign Up</h4>
+                            <p class="mb-0">Enter your email and password to register</p>
                         </div>
                         <div class="card-body">
-                            <form asp-controller="Registration" asp-action="Register">
+                            <form asp-controller="Registration" asp-action="Register" onsubmit="return validateForm(event)">
                                 <div class="input-group input-group-outline mb-3">
-                                    <label class="form-label text-light">First Name</label>
+                                    <label class="form-label">First Name</label>
                                     <input type="text" class="form-control" asp-for="FirstName" required>
                                 </div>
                                 <div class="input-group input-group-outline mb-3">
-                                    <label class="form-label text-light">Last Name</label>
+                                    <label class="form-label">Last Name</label>
                                     <input type="text" class="form-control" asp-for="LastName" required>
                                 </div>
                                 <div class="input-group input-group-outline mb-3">
-                                    <label class="form-label text-light">Email</label>
+                                    <label class="form-label">Email</label>
                                     <input type="email" class="form-control" asp-for="Email" required>
                                 </div>
                                 <div class="input-group input-group-outline mb-3" id="pass-val">
-                                    <label class="form-label text-light">Password</label>
-                                    <input id="Password" type="password" class="form-control" required>
+                                    <label class="form-label" id="password-label">Password</label>
+                                    <input id="Password" type="password" class="form-control" asp-for="Password" placeholder="" required>
+                                </div>
+                                
+                                <div class="visually-hidden" id="validator">
+                                    <label class="text-light font-weight-light">Password Strength:</label>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <label class="text-danger">Your password must contain al least 8 characters, a number and a special character.</label>
                                 </div>
 
                                 <div class="input-group input-group-outline mb-3" id="confirm-val">
-                                    <label class="form-label text-light">Confirm Password</label>
-                                    <input id="confirmPassword" type="password" class="form-control" required>
+                                    <label class="form-label" id="confirm-label">Confirm Password</label>
+                                    <input id="confirmPassword" type="password" class="form-control" placeholder="" required>
+                                </div>
+
+                                <div class="visually-hidden" id="match">
+                                    <label class="text-danger">The passwords do not match</label>
                                 </div>
 
                                 <!--  Datepicker -->
                                 <div class="input-group input-group-outline mb-3">
-                                    <label class="form-label text-light"> Enter your birthday</label>
+                                    <label class="form-label">Enter Your Birthday</label>
                                     <input class="form-control datepicker" type="text" asp-for="Birthday" required>
                                 </div>
                                 <script>
@@ -61,8 +73,8 @@
                                 </script>
                                 <div class="form-check form-check-info text-start ps-0">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label text-light" for="flexCheckDefault">
-                                        I agree to the <a asp-action="Privacy" asp-controller="Home" class="text-dark font-weight-bolder">Terms and Conditions</a>
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        I agree to the <a asp-action="Privacy" asp-controller="Home" class="text-primary text-gradient font-weight-bolder">Terms and Conditions</a>
                                     </label>
                                 </div>
                                 <div class="text-center">
@@ -71,7 +83,7 @@
                             </form>
                         </div>
                         <div class="card-footer text-center pt-0 px-lg-2 px-1">
-                            <p class="mb-2 text-sm mx-auto text-light">
+                            <p class="mb-2 text-sm mx-auto">
                                 Already have an account?
                                 <a asp-action="Index" asp-controller="Login" class="text-primary text-gradient font-weight-bold">Sign in</a>
                             </p>
@@ -85,38 +97,160 @@
 
 
 <script>
-    document.getElementById("flexCheckDefault").addEventListener("change", function () {
-        var submitButton = document.getElementById("submitButton");
-        submitButton.disabled = !this.checked;
+
+    function checkPasswordStrength(password) {
+
+        var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).+$/;
+
+        var isMatch = regex.test(password);
+
+        var zxcvbnResult = zxcvbn(password);
+
+        var progress = Math.min((zxcvbnResult.score + 1) * 25, 100);
+        var label = isMatch ? getStrengthLabel(zxcvbnResult.score) : "Weak";
+        var message = isMatch ? zxcvbnResult.feedback.suggestions.join(", ") : "Password must contain lowercase, uppercase, number, and special character";
+
+        return { label, message, progress };
+    }
+
+    function getStrengthLabel(score) {
+        switch (score) {
+            case 0:
+            case 1:
+                return "Weak";
+            case 2:
+                return "Medium";
+            case 3:
+            case 4:
+                return "Strong";
+            default:
+                return "Weak";
+        }
+    }
+
+    document.getElementById("Password").addEventListener("input", function () {
+        var password = this.value;
+        var strengthFeedback = document.getElementById("validator");
+        var progressBar = document.querySelector(".progress-bar");
+
+        var passwordStrength = checkPasswordStrength(password);
+
+        strengthFeedback.classList.remove("visually-hidden");
+        strengthFeedback.querySelector(".text-light").textContent = "Password Strength: " + passwordStrength.label;
+        strengthFeedback.querySelector(".text-danger").textContent = passwordStrength.message;
+        progressBar.style.width = passwordStrength.progress + "%";
+
+        updateSubmitButtonState();
     });
 
-    // // Function to check if passwords match and add is-valid class
-    // function checkPasswordMatch() {
-    //     var password = document.getElementById("Password").value;
-    //     var confirmPassword = document.getElementById("confirmPassword").value;
-    //     var submitButton = document.getElementById("submitButton");
+    document.getElementById("flexCheckDefault").addEventListener("change", function () {
+        updateSubmitButtonState();
+    });
 
-    //     // Check if passwords match
-    //     if (password === confirmPassword && document.getElementById("flexCheckDefault").checked) {
-    //         submitButton.disabled = false;
+    function updateSubmitButtonState() {
+        var passwordStrength = checkPasswordStrength(document.getElementById("Password").value);
+        var checkboxChecked = document.getElementById("flexCheckDefault").checked;
+        var submitButton = document.getElementById("submitButton");
 
-    //         // Add is-valid class to the input fields
-    //         document.getElementById("pass-val").classList.remove("input-group-outline");
-    //         document.getElementById("confirm-val").classList.remove("input-group-outline");
-    //         document.getElementById("pass-val").classList.add("is-valid");
-    //         document.getElementById("confirm-val").classList.add("is-valid");
-    //     } else {
-    //         submitButton.disabled = true;
+        submitButton.disabled = !checkboxChecked || passwordStrength.label !== "Strong";
+    }
 
-    //         // Remove is-valid class if passwords don't match
-    //         document.getElementById("pass-val").classList.remove("is-valid");
-    //         document.getElementById("confirm-val").classList.remove("is-valid");
-    //         document.getElementById("pass-val").classList.add("is-invalid");
-    //         document.getElementById("confirm-val").classList.add("is-invalid");
-    //     }
-    // }
+    document.getElementById("confirmPassword").addEventListener("input", function () {
+        updatePasswordMatch();
+        updatePlaceholders();
+    });
 
-    // // Add an event listener for the input fields
-    // document.getElementById("Password").addEventListener("input", checkPasswordMatch);
-    // document.getElementById("confirmPassword").addEventListener("input", checkPasswordMatch);
+    // Check password input on input change
+    document.getElementById("Password").addEventListener("input", function () {
+        updateFilledState(this);
+    });
+
+    // Check confirm password input on input change
+    document.getElementById("confirmPassword").addEventListener("input", function () {
+        updateFilledState(this);
+        updatePasswordMatch();
+    });
+
+    function updateFilledState(input) {
+        // Add or remove "is-filled" class based on whether the input is empty
+        if (input.value.trim() !== "") {
+            input.classList.add("is-filled");
+        } else {
+            input.classList.remove("is-filled");
+        }
+    }
+
+    function updatePasswordMatch() {
+        var passwordInput = document.getElementById("Password");
+        var confirmPasswordInput = document.getElementById("confirmPassword");
+        var matchFeedback = document.getElementById("match");
+        var passwordLabel = document.getElementById("password-label");
+        var confirmLabel = document.getElementById("confirm-label");
+
+        var passwordsMatch = passwordInput.value === confirmPasswordInput.value;
+        var inputsNotEmpty = passwordInput.value.trim() !== "" && confirmPasswordInput.value.trim() !== "";
+
+        if (passwordsMatch && inputsNotEmpty) {
+
+            matchFeedback.classList.add("visually-hidden");
+
+            document.getElementById("pass-val").classList.remove("input-group-outline");
+            document.getElementById("confirm-val").classList.remove("input-group-outline");
+
+            passwordLabel.remove();
+            confirmLabel.remove();
+
+            updatePlaceholders();
+
+            passwordInput.classList.add("is-valid");
+            confirmPasswordInput.classList.add("is-valid");
+        } else {
+            matchFeedback.classList.remove("visually-hidden");
+
+            document.getElementById("pass-val").classList.add("input-group-outline");
+            document.getElementById("confirm-val").classList.add("input-group-outline");
+
+
+        }
+
+        updateSubmitButtonState();
+    }
+
+    function updatePlaceholders() {
+        var passwordInput = document.getElementById("Password");
+        var confirmPasswordInput = document.getElementById("confirmPassword");
+
+        if (passwordInput.value === "") {
+            passwordInput.placeholder = "Enter your password";
+        } else {
+            passwordInput.placeholder = "";
+        }
+
+        if (confirmPasswordInput.value === "") {
+            confirmPasswordInput.placeholder = "Confirm your password";
+        } else {
+            confirmPasswordInput.placeholder = "";
+        }
+    }
+
+
+    function validateForm() {
+        var password = document.getElementById("Password").value;
+        var confirmPassword = document.getElementById("confirmPassword").value;
+        var checkboxChecked = document.getElementById("flexCheckDefault").checked;
+        var passwordStrength = checkPasswordStrength(password);
+
+        var passwordsMatch = password === confirmPassword;
+
+        if (!checkboxChecked || passwordStrength.label !== "Strong" || !passwordsMatch) {
+            alert("Please agree to the terms and conditions, ensure your password is strong, and make sure the passwords match.");
+            event.preventDefault();
+            return false;
+        }
+        return true;
+    }
+
 </script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>

@@ -11,7 +11,8 @@
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.19.5",
           "Provider.User": "1.0.0",
           "Repository.IUser": "1.0.0",
-          "ViewModels": "1.0.0"
+          "ViewModels": "1.0.0",
+          "toastr": "2.1.1"
         },
         "runtime": {
           "KayanIntern.dll": {}
@@ -25,6 +26,7 @@
           }
         }
       },
+      "jQuery/1.6.3": {},
       "Microsoft.AspNetCore.Authentication/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.Core": "2.2.0",
@@ -268,6 +270,11 @@
       },
       "System.Security.Principal.Windows/4.7.0": {},
       "System.Text.Encodings.Web/4.5.0": {},
+      "toastr/2.1.1": {
+        "dependencies": {
+          "jQuery": "1.6.3"
+        }
+      },
       "Business.Users/1.0.0": {
         "dependencies": {
           "DataLayer": "1.0.0",
@@ -339,6 +346,13 @@
       "sha512": "sha512-EaTXNZX60/k9snRsLxFhD2XmoSKubc+VOeL3hBM6/R8j2MT8/81xOc2V8EEhwr8Mu3Sf951PJPxjlXN4FznH0w==",
       "path": "dapper/2.1.21",
       "hashPath": "dapper.2.1.21.nupkg.sha512"
+    },
+    "jQuery/1.6.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vb0p7+eRmc2evBCT9W7PCUupqWiDMi9/ofBHN99LraRzLY5jPKMeFzFYBoMgwA8TiwRoFDke5hiDDLsvae7qMg==",
+      "path": "jquery/1.6.3",
+      "hashPath": "jquery.1.6.3.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authentication/2.2.0": {
       "type": "package",
@@ -640,6 +654,13 @@
       "sha512": "sha512-Xg4G4Indi4dqP1iuAiMSwpiWS54ZghzR644OtsRCm/m/lBMG8dUBhLVN7hLm8NNrNTR+iGbshCPTwrvxZPlm4g==",
       "path": "system.text.encodings.web/4.5.0",
       "hashPath": "system.text.encodings.web.4.5.0.nupkg.sha512"
+    },
+    "toastr/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-h/688XvzYk1xVYn213ryU+HCElE4n/drYzAHJkAi9LsSUPS3EbI6wGlvCglBUt7i4h5iESgAVarYaigjQmVpqg==",
+      "path": "toastr/2.1.1",
+      "hashPath": "toastr.2.1.1.nupkg.sha512"
     },
     "Business.Users/1.0.0": {
       "type": "project",

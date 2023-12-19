@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KTspJ0HSLo8nekFydakUh0Ji4Y5Krcpt/m8a5PhSy6I=",
+  "Hash": "f3L9vbdkoJFZznyurmeEM5KpqIIDD9qiQpFFn1i5Lb4=",
   "Source": "KayanIntern",
   "BasePath": "_content/KayanIntern",
   "Mode": "Default",
@@ -5888,6 +5888,25 @@
       "OriginalItemSpec": "wwwroot\\img\\landing-bg.jpg"
     },
     {
+      "Identity": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\img\\wallpapersden.com_macos-12-monterey-stock-dark_3840x2160.jpg",
+      "SourceId": "KayanIntern",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\",
+      "BasePath": "_content/KayanIntern",
+      "RelativePath": "img/wallpapersden.com_macos-12-monterey-stock-dark_3840x2160.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\wallpapersden.com_macos-12-monterey-stock-dark_3840x2160.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\js\\core\\bootstrap.bundle.min.js",
       "SourceId": "KayanIntern",
       "SourceType": "Discovered",
@@ -10579,6 +10598,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\scss\\material-dashboard\\variables\\_virtual-reality.scss"
+    },
+    {
+      "Identity": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\vid\\neon-bg.mp4",
+      "SourceId": "KayanIntern",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Fuad\\Documents\\GitHub\\KayanIntern\\KayanIntern\\wwwroot\\",
+      "BasePath": "_content/KayanIntern",
+      "RelativePath": "vid/neon-bg.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\vid\\neon-bg.mp4"
     }
   ]
 }

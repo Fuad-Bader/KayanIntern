@@ -3,9 +3,9 @@
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
-$soft-background-color: #ffffff !default; // Testing
-$font-color:            #7b809a !default;
-$h-color:               #344767 !default;
+$soft-background-color: #000000 !default; // Testing
+$font-color:            #f0f2f5 !default;
+$h-color:               #dee2e6 !default;
 
 // Color system
 
@@ -835,7 +835,7 @@ $form-text-margin-top:                  .25rem !default;
 $form-text-font-size:                   $small-font-size !default;
 $form-text-font-style:                  null !default;
 $form-text-font-weight:                 null !default;
-$form-text-color:                       $text-muted !default;
+$form-text-color:                       $light !default;
 
 $form-label-margin-bottom:              .5rem !default;
 $form-label-margin-left:                .25rem !default;
@@ -884,8 +884,8 @@ $input-bg:                              transparent !default;
 $input-disabled-bg:                     $gray-200 !default;
 $input-disabled-border-color:           null !default;
 
-$input-color:                           $gray-700 !default;
-$input-border-color:                    #d2d6da !default;
+$input-color:                           $light !default;
+$input-border-color:                    $gray-600 !default;
 $input-border-width:                    $input-btn-border-width !default;
 $input-box-shadow:                      0 1px 2px 0 rgba(0, 0, 0, 0.05) !default;
 
@@ -933,7 +933,7 @@ $form-check-transition-time:              .25s !default;
 
 $form-check-input-active-filter:          brightness(99%) !default;
 
-$form-check-input-bg:                     $white !default;
+$form-check-input-bg:                     $light !default;
 $form-check-input-border:                 none !default;
 $form-check-input-border-radius:          .35rem !default;
 $form-check-radio-border-radius:          50% !default;
@@ -954,7 +954,7 @@ $form-check-input-indeterminate-bg-color:       $component-active-bg !default;
 $form-check-input-indeterminate-border-color:   $form-check-input-indeterminate-bg-color !default;
 $form-check-input-indeterminate-bg-image:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-indeterminate-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/></svg>") !default;
 
-$form-switch-color:               rgba(0, 0, 0, 1) !default;
+$form-switch-color:               $primary !default;
 $form-switch-bg-color:            $gray-400 !default;
 $form-switch-height:              0.9375rem !default;
 $form-switch-width:               $form-switch-height*2 !default;
@@ -967,7 +967,8 @@ $form-switch-check-active-checked-after-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1)
 $form-switch-check-top:           -2.5px !default;
 $form-switch-check-left:          -5px !default;
 $form-switch-padding-start:       $form-switch-width + .5rem !default;
-$form-switch-bg-image:            none !default;
+$form-switch-bg-image:            url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$primary}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/></svg>") !default;
+/*$form-switch-bg-image:            none !default;*/
 $form-switch-border-radius:       $form-switch-width !default;
 $form-switch-translate-x-start:   1px !default;
 $form-switch-translate-x-end:     21px !default;
@@ -976,7 +977,7 @@ $form-switch-transition:          $form-check-transition !default;
 
 $form-switch-focus-color:         $form-switch-color !default;
 $form-switch-focus-bg-image:      $form-switch-bg-image !default;
-$form-switch-checked-color:       $white !default;
+$form-switch-checked-color:       $primary !default;
 $form-switch-checked-bg-image:    $form-switch-bg-image !default;
 $form-switch-checked-bg-position: right center !default;
 
@@ -1179,8 +1180,8 @@ $navbar-toggler-border-radius:      $btn-border-radius !default;
 $navbar-toggler-focus-width:        $btn-focus-width !default;
 $navbar-toggler-transition:         box-shadow .15s ease-in-out !default;
 
-$navbar-blur-bg-color:              rgba(255, 255, 255, .8) !default;
-$navbar-blur-dark-bg-color:         rgba(2, 5, 22, .8) !default;
+$navbar-blur-bg-color:              rgba(120, 120, 120, 0.40) !default;
+$navbar-blur-dark-bg-color:         rgba(2, 5, 22, .40) !default;
 
 $navbar-dark-color:                 rgba($white, .85) !default;
 $navbar-dark-hover-color:           rgba($white, .75) !default;

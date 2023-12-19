@@ -124,6 +124,7 @@
     width: $form-switch-width;
     margin-left: $form-switch-padding-start * -1;
     background-image: escape-svg($form-switch-bg-image);
+    /*background-color: $primary;*/
     background-position: left center;
     @include border-radius($form-switch-border-radius);
     @include transition($form-switch-transition);
@@ -137,8 +138,10 @@
 
       @if $enable-gradients {
         background-image: escape-svg($form-switch-checked-bg-image), var(--#{$prefix}gradient);
+        /*background-color: $primary;*/
       } @else {
         background-image: escape-svg($form-switch-checked-bg-image);
+        /*background-color: $primary;*/
       }
     }
   }
